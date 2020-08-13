@@ -1,0 +1,281 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'italian_plate_no1_expandedRg', sans-serif;
+    font-size: 62.5%;
+    color: #383043;
+}
+
+/*- Selection -*/
+
+::-moz-selection {
+    background: #e4d0fe;
+    text-shadow: none;
+}
+
+::selection {
+    background: #e4d0fe;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+body {
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+    font-family: 'italian_plate_no1_expandedBd', sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-decoration: underline;
+    color: #8223FA;
+    padding-top: 20px;
+    display: block;
+}
+
+a:hover {
+    color: #38005C;
+}
+
+a:active {
+    color: #8223FA;
+}
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    margin: 0;
+    color: #38005C;
+}
+
+h1 {
+    font-family: 'italian_plate_no1_expandedXBd', sans-serif;
+    font-size: 6.1rem;
+    line-height: 7.6rem;
+}
+
+h2 {
+    font-family: 'italian_plate_no1_expandedXBd', sans-serif;
+    font-size: 4.9rem;
+    line-height: 6.2rem;
+}
+
+h3 {
+    font-family: 'italian_plate_no1_expandedXBd', sans-serif;
+    font-size: 3.9rem;
+    line-height: 5.0rem;
+}
+
+h4 {
+    font-family: 'italian_plate_no1_expandedXBd', sans-serif;
+    font-size: 3.1rem;
+    line-height: 4.0rem;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-family: 'italian_plate_no1_expandedBd', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+}
+
+h6 {
+    font-family: 'italian_plate_no1_expandedBd', sans-serif;
+    font-size: 2.1rem;
+    line-height: 2.8rem;
+}
+
+h7 {
+    font-family: 'italian_plate_no1_expandedBd', sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+}
+
+
+p {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    color: #383043;
+}
+
+button {
+    width: 100%;
+    display: inline-block;
+    font-family: 'italian_plate_no1_expandedBd', sans-serif;
+    font-size: 1.9rem;
+    line-height: 2.6rem;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 60px;
+    transition: ease .6s;
+    cursor: pointer;
+    color: #8223FA;
+    background: #ffffff;
+}
+
+.btn-primary {
+    background: #8223FA;
+    color: #ffffff;
+    margin-bottom: 64px;
+}
+
+.btn-secondary {
+    background: none;
+    border: #8223FA solid 2px;
+    color: #8223FA;
+}
+
+.btn-secondary:hover {
+    background: #8223FA;
+    color: #ffffff;
+}
+
+.btn-nav {
+    padding: 10px 40px;
+    margin-left: 20px;
+}
+
+/* ==========================================================================
+   Styles
+   ========================================================================== */
+
+.main-header {
+    width: 100%;
+    height: 80px;
+    background: #ededed;
+    margin-bottom: 60px;
+}
+
+
+.main-card {
+    max-width: 488px;
+    padding: 48px;
+    border-radius: 24px;
+    border: #726A82 solid 1px;
+    margin: 0 auto;
+}
+
+/*
+ * Logos and steps
+ */
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.brands div {
+    width: 65px;
+    height: 56px;
+    background: #ededed;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.steps {
+    text-align: right;
+}
+
+/* ==========================================================================
+   Input fields
+   ========================================================================== */
+
+.feild {
+    margin-bottom: 30px;
+}
+
+label {
+    font-family: 'italian_plate_no1_expandedBd', sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+}
+
+label span {
+    font-family: 'italian_plate_no1_expandedRg', sans-serif;
+    display: block;
+}
+
+input {
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    border: #726A82 solid 2px;
+    color: #726A82;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 640px) {
+    .main-card {
+        max-width: 100%;
+        padding: 24px;
+        padding-top: 0;
+        border: none;
+    }
+
+}
